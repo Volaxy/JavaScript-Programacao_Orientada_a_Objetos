@@ -2,22 +2,9 @@
 
 Curso da Alura sobre orientação a objetos e seus conceitos de objetos
 
-## Objetivo Final &#x1F3AF;
-
-OBJETIVO_RESUMIDO
-
 URL do curso -> [JavaScript - Programação Orientada a Objetos](https://cursos.alura.com.br/course/javascript-passos-programacao-orientada-objetos)
 
 ![JavaScript - Programação Orientada a Objetos](https://www.alura.com.br/assets/api/share/curso-javascript-passos-programacao-orientada-objetos.png)
-
-## Links Úteis &#x1F517;
-*
-
-## Siglas &#x1F5FA;
-*
-
-## Atalhos &#x2328;
-*
 
 ***
 
@@ -50,3 +37,23 @@ URL do curso -> [JavaScript - Programação Orientada a Objetos](https://cursos.
 * Criar um objeto com `Object.create`.
 * Verificar se o prototype é igual com a função `isPrototypeOf()`.
 * O que são **factory functions**.
+
+***
+
+## 02 - Classes e Herança &#x1F516;
+* O que são e como funcionam as classes, elementos essenciais para se trabalhar com orientação a objetos em grande parte das linguagens de programação voltadas para este paradigma. As classes fornecem um modelo para a criação de cópias (instâncias) de objetos que compartilham dos mesmos tipos de propriedades e métodos.
+* O conceito de herança de classe, também importante para se trabalhar com orientação a objetos, como criar subclasses que herdam propriedades e métodos de uma superclasse e como reaproveitar estas propriedades e métodos da superclasse através da função `super()`.
+* Como uma subclasse pode ter propriedades e métodos próprios, além dos recebidos da superclasse, e como declarar isso no código criando novos métodos.
+* A praticar a sintaxe de classe com JavaScript, criando classes, subclasses, propriedades, construtores e métodos.
+
+### 01 - Estrutura da Classe
+* Declarar uma classe com a palavra chave `class`.
+* Criar métodos de classe.
+
+### 02 - Herança de Classe
+* Herdar as características de uma classe com a palavra chave `extends`.
+* Usar o construtor da **super classe** com a função `super()`.
+
+### 03 - Adicionando Métodos
+* Criar uma nova classe que extende `User`.
+* O que são **métodos estáticos**.
