@@ -1,0 +1,43 @@
+# Getters e Setters com Funções
+
+Na atividade anterior sobre atributos privados vimos um exemplo de código onde, ao invés de `get` e `set`, foram utilizadas funções para esse papel:
+
+```javascript
+class User {
+ _nome = '';
+
+ setNome(nome) {
+   this._nome = nome;
+ }
+
+ getNome() {
+   return this._nome;
+ }
+}
+```
+
+É possível usar métodos como assessors, como visto acima. Porém, há algumas vantagens na utilização de `get`/`set`:
+
+Apesar de serem métodos, a sintaxe para uso do `get` e `set` é a mesma que utiilizamos para acessar/modificar propriedades públicas normalmente, o que faz sentido com a ideia do encapsulamento de “expôr” somente o que é necessário da classe. Por outro lado, na forma acima, os métodos são acessados com a sintaxe usual de execução de função (usando parênteses).
+
+Por exemplo, usando funções como assessors teríamos as seguintes chamadas de método:
+
+```javascript
+const nome = novoUser.getNome() //getter
+novoUser.setNome('Pedro') //setter
+novoUser.exibeInfos() // método normal
+```
+
+Utilizando `get` e `set`:
+
+```javascript
+const nome = novoUser.nome //getter
+novoUser.nome = 'Pedro' //setter
+novoUser.exibeInfos() // método normal
+```
+
+Dessa forma, o uso de `get`/`set` ajuda na legibilidade.
+
+Além disso, os assessor têm, em si mesmos, limitações quanto aos parâmetros aceitos: `get` não aceita nenhum parâmetro e `set` apenas um parâmetro (referente ao dado que será definido), o que ajuda a garantir que não irão receber parâmetros “inesperados” que podem causar bugs. O mesmo comportamento pode ser implementado em métodos normais, por meio de validações, porém isso torna o desenvolvimento menos ágil.
+
+Na verdade (como em vários outros aspectos do desenvolvimento com JavaScript) não há consenso quanto ao uso de métodos normais no lugar de assessors e você vai encontrar as mais diversas opiniões sobre esse assunto. Como há outras linguagens de programação que não têm assessors e utilizam funções como getters/setters, pessoas que já desenvolvem nestas linguagens podem transferir sua experiência para o JavaScript. Porém, agora que você já conhece os dois casos, já fica mais fácil identificar e ler códigos que implementam o encapsulamento das duas formas.

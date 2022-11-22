@@ -57,3 +57,23 @@ URL do curso -> [JavaScript - Programação Orientada a Objetos](https://cursos.
 ### 03 - Adicionando Métodos
 * Criar uma nova classe que extende `User`.
 * O que são **métodos estáticos**.
+
+***
+
+## 03 - Encapsulamento &#x1F516;
+* O conceito de *encapsulamento*, que é a ação (ou ações) de “esconder” atributos de uma classe, para evitar acesso indevido a atributos importantes ou dados sensíveis, ou que métodos sejam utilizados de forma errada;
+* Como utilizar a sintaxe de atributos privados do JavaScript, através do prefixo `#`, para que a própria linguagem de programação faça a “segurança” da classe, impedindo o acesso externo a propriedades e métodos assinalados como privados com este prefixo;
+* A criar métodos *assessors* para “expôr” e permitir acesso e modificação de propriedades de forma controlada e restrita, através do uso das funções `get` para retornar dados específicos e `set` para definir dados específicos.
+
+### 01 - Atributos Privados
+* Declarar **variáveis privadas** com `#` ou `_`.
+
+### 02 - Métodos Privados
+* Criar **métodos privados** nas classes.
+
+### 03 - Getters
+* Usar a palavra chave `get` para acessar a propriedade de um objeto.
+* Chamar o **getter** da propriedade do objeto.
+
+### 04 - Setters
+* Atribuir valores para as propriedades de um objeto através do método `set`.
